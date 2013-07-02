@@ -30,7 +30,7 @@
 #'An R implementation of the BioFabric network visualization tool
 #'
 #'@details
-#'Plots a network, provided in igraph format (see \code{\link{graph}}),
+#'Plots a network, provided in igraph format (see \code{\link{igraph}}),
 #'using BioFabric. This is a "pre-alpha" first release, and only handles
 #'the default layout algorithm. NOTE 1: Best results are obtained using
 #'a PDF display target, as shown in the examples. BioFabric is very 
@@ -41,10 +41,14 @@
 #'sizing or line width sizing. Use the PDF output!
 #'
 #'@param inGraph The graph to plot, in igraph format (see 
-#'\code{\link{graph}}). Node names should already be set using the vertex
+#'\code{\link{igraph}}). Node names should already be set using the vertex
 #'attribute "label". If not set, the function will assign number names.
+#'
 #'@author Bill Longabaugh <wlongabaugh@@systemsbiology.org>
+#'
 #'@export
+#'@import igraph
+#'
 #'@examples
 #'
 #' \dontrun{
@@ -64,14 +68,14 @@
 #' width <- ecount(bfGraph)
 #' aspect <- height / width;
 #' plotWidth <- 10.0 
-#' plotHeight <- plotWidth * (aspect 1.2)
+#' plotHeight <- plotWidth * (aspect * 1.2)
 #' pdf("myBioFabricOutput.pdf", width=plotWidth, height=plotHeight)
 #' bioFabric(bfGraph)
 #' dev.off()
 #' }
 #' 
 #'@references \url{http://www.BioFabric.org} 
-#'            \url{http://www.biomedcentral.com/1471-2105/13/275}
+#'@references \url{http://www.biomedcentral.com/1471-2105/13/275}
 #'
 
 bioFabric <- function(inGraph) {
