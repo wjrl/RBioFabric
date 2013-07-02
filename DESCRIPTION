@@ -1,0 +1,18 @@
+Package: RBioFabric
+Type: Package
+Title: BioFabric network visualization tool
+Version: 0.2
+Date: 2013-07-02
+Author: William Longabaugh
+Maintainer: William Longabaugh <wlongabaugh@systemsbiology.org>
+Description: Implementation of the function 'bioFabric' for creating scalable
+    network digrams where nodes are represented by horizontal lines, and edges
+    are represented by vertical lines.
+URL: http://www.BioFabric.org/
+Depends:
+    igraph,
+    R (>= 3.0.1)
+License: MIT
+LazyLoad: yes
+Collate:
+    'bioFabric.R'
