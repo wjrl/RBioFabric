@@ -1,0 +1,14 @@
+
+v 0.3
+
+New support for user-specified node ordering and the option to display
+shadow links. Code cleanup.
+
+v 0.2
+
+Upgraded repository to R package format. Minor documentation modifications in
+comments.
+
+v 0.01 
+
+First release
