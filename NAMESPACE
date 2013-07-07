@@ -1,2 +1,4 @@
 export(bioFabric)
+export(defaultNodeOrder)
+export(passthroughNodeOrder)
 import(igraph)

@@ -1,8 +1,8 @@
 Package: RBioFabric
 Type: Package
 Title: BioFabric network visualization tool
-Version: 0.2
-Date: 2013-07-02
+Version: 0.3
+Date: 2013-07-07
 Author: William Longabaugh
 Maintainer: William Longabaugh <wlongabaugh@systemsbiology.org>
 Description: Implementation of the function 'bioFabric' for creating scalable
